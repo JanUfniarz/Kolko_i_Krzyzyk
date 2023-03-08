@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#592323"
+    android:backgroundTint="@color/purple_200"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:id="@+id/Everything"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/lineVL"
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/bu5"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/lineVR"
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bu5"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/lineHT"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_above="@id/bu5"
+            android:layout_centerHorizontal="true"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/lineHB"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/bu5"
+            android:layout_centerHorizontal="true"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/topBound"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_above="@id/lineVL"
+            android:layout_centerHorizontal="true"
+            android:background="@color/purple_200" />
+
+        <View
+            android:id="@+id/bottomBound"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/lineVL"
+            android:layout_centerHorizontal="true"
+            android:background="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/text_view_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/topBound"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:lines="3"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineHT"
+            android:layout_below="@id/topBound"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/lineVL"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineHT"
+            android:layout_below="@+id/topBound"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/lineVR"
+            android:layout_toRightOf="@+id/lineVL"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineHT"
+            android:layout_below="@id/topBound"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lineVR"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineHB"
+            android:layout_below="@+id/lineHT"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/lineVL"
+            android:backgroundTint="@color/purple_200"
+            android:fontFamily="@font/holidayshomework"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineHB"
+            android:layout_below="@+id/lineHT"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lineVR"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBound"
+            android:layout_below="@id/lineHB"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/lineVL"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBound"
+            android:layout_below="@id/lineHB"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/lineVR"
+            android:layout_toRightOf="@+id/lineVL"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/bu9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBound"
+            android:layout_below="@id/lineHB"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/lineVR"
+            android:backgroundTint="@color/purple_200"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="80sp"
+            android:fontFamily="@font/holidayshomework"
+            android:gravity="bottom|center"/>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomBound"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:lines="3"
+            android:backgroundTint="@color/teal_700"
+            android:text="START" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+
+        <View
+            android:id="@+id/lineV2"
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineH2"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineX1"
+            android:layout_width="5dp"
+            android:layout_height="520dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"
+            android:rotation="-45"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineX2"
+            android:layout_width="5dp"
+            android:layout_height="520dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"
+            android:rotation="45"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineV1"
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/lineV2"
+            android:layout_marginRight="120dp"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineV3"
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lineV2"
+            android:layout_marginLeft="120dp"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineH1"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/lineH2"
+            android:layout_marginBottom="120dp"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineH3"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lineH2"
+            android:layout_marginTop="120dp"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
